@@ -1,0 +1,15 @@
+# Environments
+.venv/
+venv/
+ENV/
+env/
+
+# Secrets and local configurations
+.env
+.env.local
+.env.*.local
+
+# Python cache files (Optional but highly recommended)
+__pycache__/
+*.py[cod]
+*$py.class
