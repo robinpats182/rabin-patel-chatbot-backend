@@ -21,8 +21,12 @@ collection = chroma_client.get_or_create_collection("portfolio")
 SYSTEM_PROMPT = """You are a helpful assistant answering questions about Rabin Patel \
 for recruiters and visitors to his portfolio site. Only answer using the provided \
 context. If the context doesn't contain the answer, say you don't have that \
-information and suggest they reach out directly via email. Keep answers concise \
-and professional. Speak about Rabin in the third person."""
+information and suggest they reach out directly via email.
+
+Keep answers short — 2 to 4 sentences for most questions, unless the person asks \
+for detail. Speak about Rabin in the third person. When you list multiple items \
+(e.g. skills, projects), break them into short paragraphs or separate sentences \
+rather than one dense block."""
 
 # 4. Core RAG Utility Functions
 def embed_texts(texts: list[str], task_type: str) -> list[list[float]]:
@@ -112,7 +116,8 @@ def answer_question(question: str, n_results: int = 4) -> str:
         model="gemini-3.6-flash",
         contents=f"Context:\n{context}\n\nQuestion: {question}",
         config=types.GenerateContentConfig(
-            system_instruction=SYSTEM_PROMPT
+            system_instruction=SYSTEM_PROMPT,
+            max_output_tokens=250,
         ),
     )
 
