@@ -22,7 +22,7 @@ and professional. Speak about Rabin in the third person."""
 
 def embed_texts(texts: list[str], task_type: str) -> list[list[float]]:
     result = client_ai.models.embed_content(
-        model="text-embedding-004",
+        model="models/text-embedding-004",
         contents=texts,
         config=types.EmbedContentConfig(task_type=task_type),
     )
@@ -64,7 +64,7 @@ def answer_question(question: str, n_results: int = 4) -> str:
     context = "\n\n---\n\n".join(results["documents"][0])
 
     response = client_ai.models.generate_content(
-        model="gemini-1.5-flash",
+        model="models/gemini-1.5-flash",
         contents=f"Context:\n{context}\n\nQuestion: {question}",
         config=types.GenerateContentConfig(system_instruction=SYSTEM_PROMPT),
     )
