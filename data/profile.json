@@ -1,0 +1,97 @@
+{
+  "name": "Rabin Patel",
+  "role": "Fullstack Developer · AI & Automation",
+  "bio": "Software engineer with experience across frontend development, Python automation, applied machine learning, and data-informed operations. Currently completing an M.Sc. in Information Technology with a focus on AI & Data Analytics.",
+  "location": "Berlin, Germany",
+  "availability": "Open to remote, hybrid, and relocation opportunities",
+  "email": "rabinpatel150@gmail.com",
+  "years": "3+ years",
+  "stack": "Python · React · FastAPI",
+  "languages": "English C1 · German A2",
+  "authorization": "EU / German work authorization",
+  "experience": [
+    {
+      "company": "Hyo Seong Europe GmbH",
+      "role": "Working Student · Operations Support",
+      "location": "Berlin, Germany",
+      "dates": "03/2026 — Present",
+      "summary": "Digitizing material flow and audit workflows across operations.",
+      "bullets": [
+        "Cut manual invoice cross-checking across 50–200+ monthly invoices with a Python OCR and Excel reconciliation tool.",
+        "Improved material-flow accuracy with an in-house app spanning imports, production, storage, FIFO quality, and exports alongside SAP.",
+        "Presented Power BI audit findings and digitalization initiatives to align workflows with the Plant Director."
+      ]
+    },
+    {
+      "company": "Web Experts Nepal",
+      "role": "Frontend Developer",
+      "location": "Kathmandu, Nepal",
+      "dates": "10/2022 — 05/2024",
+      "summary": "Built modern web applications and automation workflows for enterprise clients.",
+      "bullets": [
+        "Delivered interactive React and JavaScript interfaces for enterprise projects including Lakeview Precision and Modern Design Wardrobes.",
+        "Established a foundation for backend development through Python automation scripts for API testing and deployment workflows."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Bill reconciliation tool",
+      "problem": "Monthly invoice audits were slowed by repetitive manual matching.",
+      "description": "A Python + OCR workflow that matches scanned invoices against Excel statements and flags missing entries, mismatches, and discrepancies.",
+      "result": "Built for 50–200+ invoices per monthly audit."
+    },
+    {
+      "title": "Phishing email detection system",
+      "problem": "Teams need a fast, explainable first pass on suspicious messages.",
+      "description": "An ML classifier using TF-IDF and Logistic Regression, paired with a Next.js frontend and FastAPI backend with Pydantic schemas.",
+      "result": "Containerized CI/CD workflow with GitHub Actions and Docker."
+    },
+    {
+      "title": "Document intelligence agent",
+      "problem": "Large PDF collections are difficult to query with confidence.",
+      "description": "A production-ready RAG system for natural-language questions over PDFs, with automated ingestion, persistent storage, and containerized deployment.",
+      "result": "HuggingFace embeddings + Llama 3 retrieval pipeline."
+    }
+  ],
+  "education": [
+    {
+      "degree": "M.Sc. Information Technology · AI & Data Analytics",
+      "institution": "Mediadesign Hochschule, Berlin",
+      "dates": "04/2025 — Present · Expected 08/2026",
+      "detail": "Machine Learning and Intelligent Systems (1.0) · Senior IT Project (1.3) · Data Engineering and Big Data Systems (1.3)"
+    },
+    {
+      "degree": "B.Sc. Computer Science",
+      "institution": "Herald College Kathmandu",
+      "dates": "02/2019 — 03/2022",
+      "detail": "Computer science foundation across software development and systems."
+    }
+  ],
+  "certifications": [
+    { "name": "AI Engineering Certificate", "issuer": "IBM", "year": "2025" },
+    { "name": "LLM Course", "issuer": "Hugging Face", "year": "2025" }
+  ],
+  "thesis": "Implementation of Shared LoRA Subspaces for Continual Adaptation of Distilled Models and Retrieval-Augmented Systems.",
+  "openSource": "Google Agent Development Kit · Unicode NFC normalization and adaptive character-level ROUGE, improving non-English evaluation accuracy from 0% to 90%+ (PR #4131, under review).",
+  "interests": [
+    "Open source",
+    "Mechanical keyboards",
+    "Hiking",
+    "Generative art",
+    "Chess",
+    "Home automation",
+    "Photography",
+    "Language learning"
+  ],
+  "toolkit": [
+    { "label": "Python", "blurb": "Built the OCR invoice-matching pipeline at Hyo Seong Europe." },
+    { "label": "React", "blurb": "Frontend for the phishing-detection dashboard and this site." },
+    { "label": "PostgreSQL", "blurb": "Stored and queried reconciliation records for monthly audits." },
+    { "label": "Docker", "blurb": "Containerized the phishing classifier's CI/CD pipeline." },
+    { "label": "FastAPI", "blurb": "Served the phishing-detection model behind a typed API." },
+    { "label": "Next.js", "blurb": "Shipped this portfolio, server-rendered end to end." },
+    { "label": "TypeScript", "blurb": "Typed the frontend and Pydantic-adjacent API contracts." },
+    { "label": "RAG / AI", "blurb": "Currently building a document-intelligence agent with it." }
+  ]
+}
