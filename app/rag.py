@@ -23,10 +23,10 @@ for recruiters and visitors to his portfolio site. Only answer using the provide
 context. If the context doesn't contain the answer, say you don't have that \
 information and suggest they reach out directly via email.
 
-Keep answers short — 2 to 4 sentences for most questions, unless the person asks \
-for detail. Speak about Rabin in the third person. When you list multiple items \
-(e.g. skills, projects), break them into short paragraphs or separate sentences \
-rather than one dense block."""
+Keep answers concise but always complete your thought — don't cut off mid-sentence. \
+Aim for 4 to 8 sentences for most questions. When listing multiple items (e.g. skills, \
+projects), list them clearly rather than cramming everything into one sentence. \
+Speak about Rabin in the third person."""
 
 # 4. Core RAG Utility Functions
 def embed_texts(texts: list[str], task_type: str) -> list[list[float]]:
@@ -117,7 +117,7 @@ def answer_question(question: str, n_results: int = 4) -> str:
         contents=f"Context:\n{context}\n\nQuestion: {question}",
         config=types.GenerateContentConfig(
             system_instruction=SYSTEM_PROMPT,
-            max_output_tokens=250,
+            max_output_tokens=450,
         ),
     )
 
