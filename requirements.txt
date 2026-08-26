@@ -1,7 +1,6 @@
 fastapi
 uvicorn[standard]
 chromadb
-sentence-transformers
-google-generativeai
+google-genai
 pypdf
 python-dotenv
